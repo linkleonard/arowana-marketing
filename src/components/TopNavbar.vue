@@ -1,12 +1,12 @@
 <template>
 <section>
   <img :src="logo" />
-    <h1>Arowana Dragon Boat Team</h1>
-    <nav>
-      <a href="#">About Us</a>
-      <a href="#">Join Us</a>
-    </nav>
-  </section>
+  <h1>Arowana <small>Dragon Boat Team</small></h1>
+  <nav>
+    <a href="#">About Us</a>
+    <a href="#">Join Us</a>
+  </nav>
+</section>
 </template>
 
 <script>
@@ -27,20 +27,32 @@ export default {
 section {
     background: rgba(0, 0, 0, 1);
     display: flex;
+    flex-flow: row wrap;
     padding: 10px 20px;
     align-items: center;
 }
 
 h1 {
+    flex: 0 0 auto;
     color: #dc671e;
     margin: 10px;
+    text-align: left;
+}
+
+small {
+    display: block;
 }
 
 nav {
     flex: 1 0 auto;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        justify-content: flex-end;
+    }
 }
 
 a {
@@ -52,5 +64,6 @@ img {
     flex: 0 0 auto;
     width: 40px;
     height: 40px;
+
 }
 </style>
