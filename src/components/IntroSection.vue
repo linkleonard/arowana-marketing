@@ -15,14 +15,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-section {
-    background: center / cover url("../assets/whoweare.jpg");
-    padding: 10px 20px;
-    align-items: center;
+h2 {
+    margin: 20px;
 }
 
-h2 {
-    margin: 0 0 120px 0;
+p {
+    background: center / cover url("../assets/whoweare.jpg");
+    padding: 150px 20px 50px 20px;
+    align-items: center;
+
+    font-weight: 600;
+    color: white;
 }
 
 </style>

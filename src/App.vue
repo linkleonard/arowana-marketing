@@ -50,4 +50,9 @@ h3 {
     color: #FF9652;
 }
 
+p {
+    color: white;
+    font-weight: 600;
+}
+
 </style>
