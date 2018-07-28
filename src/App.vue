@@ -2,7 +2,8 @@
 <div id="app">
   <TopNavbar />
   <IntroSection />
-  <ScheduleSection />
+  <PracticeScheduleSection />
+  <EventScheduleSection />
   <AboutSection />
   <JoinUsSection />
 </div>
@@ -14,7 +15,8 @@ import TopNavbar from './components/TopNavbar.vue'
 import IntroSection from './components/IntroSection.vue'
 import JoinUsSection from './components/JoinUsSection.vue'
 import AboutSection from './components/AboutSection.vue'
-import ScheduleSection from './components/ScheduleSection.vue'
+import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
+import EventScheduleSection from './components/EventScheduleSection.vue'
 
 export default {
     name: 'app',
@@ -24,7 +26,8 @@ export default {
         TopNavbar,
         JoinUsSection,
         AboutSection,
-        ScheduleSection,
+        PracticeScheduleSection,
+        EventScheduleSection,
     }
 }
 </script>
