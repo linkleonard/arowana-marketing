@@ -1,8 +1,9 @@
 <template>
 <section>
   <h2>Join Us</h2>
-  <p>Marketing text 1</p>
-  <p>Marketing text 2</p>
+  <p>Like water sports?</p>
+  <p>Want to be part of a team of like-minded people?</p>
+  <p>Join us at practice!</p>
   <a href="#">Sign up</a>
 </section>
 </template>
@@ -15,7 +16,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-section {
-    padding: 20px 0 40px 0;
+h2 {
+    margin-bottom: 50px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #75482a;
+    background: #75482a;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 30px 50px;
 }
 </style>
