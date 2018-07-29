@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import TopNavbar from './components/TopNavbar.vue'
 import IntroSection from './components/IntroSection.vue'
 import JoinUsSection from './components/JoinUsSection.vue'
@@ -22,7 +21,6 @@ export default {
     name: 'app',
     components: {
         IntroSection,
-        HelloWorld,
         TopNavbar,
         JoinUsSection,
         AboutSection,
