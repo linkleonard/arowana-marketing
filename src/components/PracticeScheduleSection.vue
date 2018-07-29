@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    name: 'ScheduleSection',
+    name: 'PracticeScheduleSection',
 }
 </script>
 
