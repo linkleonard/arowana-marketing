@@ -1,6 +1,7 @@
 <template>
 <div id="app">
   <TopNavbar />
+  <Gallery />
   <IntroSection />
   <PracticeScheduleSection />
   <EventScheduleSection />
@@ -14,19 +15,21 @@ import TopNavbar from './components/TopNavbar.vue'
 import IntroSection from './components/IntroSection.vue'
 import JoinUsSection from './components/JoinUsSection.vue'
 import AboutSection from './components/AboutSection.vue'
+import Gallery from './components/Gallery.vue'
 import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
 import EventScheduleSection from './components/EventScheduleSection.vue'
 
 export default {
-    name: 'app',
-    components: {
-        IntroSection,
-        TopNavbar,
-        JoinUsSection,
-        AboutSection,
-        PracticeScheduleSection,
-        EventScheduleSection,
-    }
+  name: 'app',
+  components: {
+    IntroSection,
+    TopNavbar,
+    Gallery,
+    JoinUsSection,
+    AboutSection,
+    PracticeScheduleSection,
+    EventScheduleSection,
+  }
 }
 </script>
 
