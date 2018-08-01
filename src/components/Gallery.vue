@@ -68,24 +68,27 @@ export default Gallery;
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h2 {
-    margin-bottom: 50px;
-}
-
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    background: #101010;
 }
 
 img {
     flex: 1 1 auto;
+    object-position: center;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
     position: relative;
-    max-height: 60vh;
+    display: flex;
     overflow: hidden;
+    max-height: 60vh;
 }
 
 .controls {
@@ -95,18 +98,21 @@ img {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .controls :first-child {
+    border-right-width: 1px;
     border-radius: 20px 0 0 20px;
 }
 
 .controls :last-child {
+    border-left-width: 1px;
     border-radius: 0 20px 20px 0;
 }
 
 button {
+    border: 2px solid white;
     font-size: 24px;
     font-weight: 600;
     color: white;
