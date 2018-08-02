@@ -4,7 +4,7 @@
   <p>Like water sports?</p>
   <p>Want to be part of a team of like-minded people?</p>
   <p>Join us at practice!</p>
-  <a href="#">Sign up</a>
+  <a :href="formLink">Sign up</a>
 </section>
 </template>
 
@@ -12,6 +12,11 @@
 export default {
   name: 'JoinUsSection',
   props: ["id"],
+  data() {
+    return {
+      formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1",
+    };
+  },
 }
 </script>
 
