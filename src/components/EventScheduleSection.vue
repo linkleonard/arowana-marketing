@@ -32,7 +32,7 @@ div {
 }
 
 h3 {
-    color: #cfcfcf;
+    color: $image-header-color;
     margin: 10px;
 }
 

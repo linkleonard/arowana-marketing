@@ -9,12 +9,14 @@
 </template>
 
 <script>
+import { formLink } from '../constants.js';
+
 export default {
   name: 'JoinUsSection',
   props: ["id"],
   data() {
     return {
-      formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1",
+      formLink,
     };
   },
 }
