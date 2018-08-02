@@ -111,4 +111,8 @@ li {
     font-weight: 600;
 }
 
+a {
+    @extend %main-button;
+}
+
 </style>

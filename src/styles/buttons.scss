@@ -1,0 +1,12 @@
+@import "./imports.scss";
+
+%main-button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $button-background;
+    background: $button-background;
+    color: $button-text;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 30px 50px;
+}

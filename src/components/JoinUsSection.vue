@@ -23,19 +23,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 h2 {
     margin-bottom: 50px;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #75482a;
-    background: #75482a;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 30px;
-    margin: 30px 50px;
+    @extend %main-button;
 }
 </style>
