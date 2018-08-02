@@ -9,6 +9,7 @@
     <!-- </a> -->
     <router-link to="/practice">Practice</router-link>
     <router-link to="/gallery">Gallery</router-link>
+    <a :href="formLink">Join Us</a>
   </nav>
 </section>
 </template>
@@ -21,6 +22,7 @@ export default {
   data() {
     return {
       logo,
+      formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1",
     };
   },
   props: ["routes"],
