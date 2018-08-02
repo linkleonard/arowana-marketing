@@ -1,5 +1,5 @@
 <template>
-<section>
+<section :id="id">
   <h2>Upcoming Races</h2>
   <div>
     <h3>Baltimore</h3>
@@ -16,7 +16,8 @@
 
 <script>
 export default {
-    name: 'EventScheduleSection',
+  name: 'EventScheduleSection',
+  props: ["id"],
 }
 </script>
 

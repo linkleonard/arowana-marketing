@@ -1,5 +1,5 @@
 <template>
-<section>
+<section :id="id">
   <h2>Practice</h2>
   <div>
     <p>We have practice sessions on Tuesday, Saturday and Sunday.</p>
@@ -10,7 +10,8 @@
 
 <script>
 export default {
-    name: 'PracticeScheduleSection',
+  name: 'PracticeScheduleSection',
+  props: ["id"],
 }
 </script>
 

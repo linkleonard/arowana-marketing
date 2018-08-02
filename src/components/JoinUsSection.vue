@@ -1,5 +1,5 @@
 <template>
-<section>
+<section :id="id">
   <h2>Join Us</h2>
   <p>Like water sports?</p>
   <p>Want to be part of a team of like-minded people?</p>
@@ -10,7 +10,8 @@
 
 <script>
 export default {
-    name: 'JoinUsSection',
+  name: 'JoinUsSection',
+  props: ["id"],
 }
 </script>
 

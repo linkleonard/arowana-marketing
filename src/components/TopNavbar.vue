@@ -3,8 +3,9 @@
   <img :src="logo" />
   <h1>Arowana <small>Dragon Boat Team</small></h1>
   <nav>
-    <a href="#">About Us</a>
-    <a href="#">Join Us</a>
+    <a v-for="route in routes" :key="route.href" :href="'#' + route.href">
+      {{ route.label }}
+    </a>
   </nav>
 </section>
 </template>
@@ -13,12 +14,13 @@
 import logo from '../assets/logo.jpg';
 
 export default {
-    name: 'TopNavbar',
-    data() {
-        return {
-            logo,
-        };
-    }
+  name: 'TopNavbar',
+  data() {
+    return {
+      logo,
+    };
+  },
+  props: ["routes"],
 }
 </script>
 

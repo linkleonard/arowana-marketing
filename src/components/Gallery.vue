@@ -1,5 +1,5 @@
 <template>
-<section>
+<section :id="id">
   <h2>Gallery</h2>
   <div class="container" @mouseover="disableImageRotation" @mouseout="enableImageRotation">
     <div class="carousel">
@@ -21,6 +21,7 @@ import restaurant from "../assets/gallery-boston-restaurant-2017.jpg";
 
 const Gallery = {
   name: 'Gallery',
+  props: ["id"],
   data() {
     return {
       selectedImage: 0,

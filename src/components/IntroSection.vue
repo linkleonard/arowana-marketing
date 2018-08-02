@@ -1,13 +1,14 @@
 <template>
-<section>
-  <h2>Who we are</h2>
+<section :id="id">
+  <h2>Who We Are</h2>
   <p>We are a group of friendly folks from different walks of life, with the goal of having fun together.</p>
 </section>
 </template>
 
 <script>
 export default {
-    name: 'IntroSection',
+  name: 'IntroSection',
+  props: ["id"],
 }
 </script>
 

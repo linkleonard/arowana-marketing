@@ -1,12 +1,12 @@
 <template>
 <div id="app">
-  <TopNavbar />
-  <Gallery />
-  <IntroSection />
-  <PracticeScheduleSection />
-  <EventScheduleSection />
-  <AboutSection />
-  <JoinUsSection />
+  <TopNavbar :routes="routes" />
+  <section
+    v-for="route in routes"
+    :key="route.href"
+    :is="route.component"
+    :id="route.href"
+  />
 </div>
 </template>
 
@@ -22,14 +22,44 @@ import EventScheduleSection from './components/EventScheduleSection.vue'
 export default {
   name: 'app',
   components: {
-    IntroSection,
     TopNavbar,
-    Gallery,
-    JoinUsSection,
-    AboutSection,
-    PracticeScheduleSection,
-    EventScheduleSection,
-  }
+  },
+  data() {
+    return {
+      routes: [
+        {
+          "href": "section-gallery",
+          "label": "Gallery",
+          "component": Gallery,
+        },
+        {
+          "href": "section-who-we-are",
+          "label": "Who We Are",
+          "component": IntroSection,
+        },
+        {
+          "href": "section-practice",
+          "label": "Practice",
+          "component": PracticeScheduleSection,
+        },
+        {
+          "href": "section-races",
+          "label": "Races",
+          "component": EventScheduleSection,
+        },
+        {
+          "href": "section-about",
+          "label": "About Us",
+          "component": AboutSection,
+        },
+        {
+          "href": "section-join",
+          "label": "Join Us",
+          "component": JoinUsSection,
+        },
+      ],
+    };
+  },
 }
 </script>
 

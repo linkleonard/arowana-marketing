@@ -1,5 +1,5 @@
 <template>
-<section>
+<section :id="id">
   <h2>Our Story</h2>
   <div>
     <p>Aut id officia voluptas aut quod blanditiis cum. Voluptatum voluptas ipsa sapiente dolor possimus. Adipisci placeat hic ullam quam.</p>
@@ -11,7 +11,8 @@
 
 <script>
 export default {
-    name: 'About',
+  name: 'About',
+  props: ["id"],
 }
 </script>
 
