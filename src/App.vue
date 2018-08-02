@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div>
   <TopNavbar :routes="routes" />
   <router-view></router-view>
   <SiteFooter />
@@ -8,11 +8,6 @@
 
 <script>
 import TopNavbar from './components/TopNavbar.vue'
-import IntroSection from './components/IntroSection.vue'
-import JoinUsSection from './components/JoinUsSection.vue'
-import AboutSection from './components/AboutSection.vue'
-import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
-import EventScheduleSection from './components/EventScheduleSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
 export default {
@@ -27,27 +22,22 @@ export default {
         {
           "href": "section-who-we-are",
           "label": "Who We Are",
-          "component": IntroSection,
         },
         {
           "href": "section-practice",
           "label": "Practice",
-          "component": PracticeScheduleSection,
         },
         {
           "href": "section-races",
           "label": "Races",
-          "component": EventScheduleSection,
         },
         {
           "href": "section-about",
           "label": "About Us",
-          "component": AboutSection,
         },
         {
           "href": "section-join",
           "label": "Join Us",
-          "component": JoinUsSection,
         },
       ],
     };
@@ -61,6 +51,7 @@ body {
     background: #202020;
     margin: 0;
 }
+
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

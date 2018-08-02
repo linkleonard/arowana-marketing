@@ -10,14 +10,10 @@
 </template>
 
 <script>
-import TopNavbar from './components/TopNavbar.vue'
 import IntroSection from './components/IntroSection.vue'
 import JoinUsSection from './components/JoinUsSection.vue'
 import AboutSection from './components/AboutSection.vue'
-import Gallery from './components/Gallery.vue'
-import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
 import EventScheduleSection from './components/EventScheduleSection.vue'
-import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'app',
