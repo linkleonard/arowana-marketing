@@ -28,11 +28,6 @@ export default {
     return {
       routes: [
         {
-          "href": "section-gallery",
-          "label": "Gallery",
-          "component": Gallery,
-        },
-        {
           "href": "section-who-we-are",
           "label": "Who We Are",
           "component": IntroSection,
@@ -52,6 +47,12 @@ export default {
           "label": "About Us",
           "component": AboutSection,
         },
+        {
+          "href": "section-gallery",
+          "label": "Gallery",
+          "component": Gallery,
+        },
+
         {
           "href": "section-join",
           "label": "Join Us",
