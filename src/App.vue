@@ -6,7 +6,8 @@
     :key="route.href"
     :is="route.component"
     :id="route.href"
-  />
+    />
+  <SiteFooter />
 </div>
 </template>
 
@@ -18,11 +19,13 @@ import AboutSection from './components/AboutSection.vue'
 import Gallery from './components/Gallery.vue'
 import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
 import EventScheduleSection from './components/EventScheduleSection.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'app',
   components: {
     TopNavbar,
+    SiteFooter,
   },
   data() {
     return {

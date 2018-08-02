@@ -6,3 +6,6 @@ $button-background-transparent-hover: transparentize(black, 0.4);
 
 $darken-background-layer: linear-gradient(to bottom, $darken-background, $darken-background);
 $darken-text-shadow: $dark-text-shadow 2px 2px 5px;
+
+$header-background: rgba(0, 0, 0, 1);
+$footer-background: rgba(0, 0, 0, 1);

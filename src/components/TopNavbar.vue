@@ -25,9 +25,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 section {
-    background: rgba(0, 0, 0, 1);
+    background: $header-background;
     display: flex;
     flex-flow: row wrap;
     padding: 10px 20px;
