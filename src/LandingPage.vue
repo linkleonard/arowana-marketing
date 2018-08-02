@@ -1,5 +1,5 @@
 <template>
-<div id="app">
+<div>
   <section
     v-for="route in routes"
     :key="route.href"
@@ -47,29 +47,4 @@ export default {
 </script>
 
 <style>
-
-body {
-    background: #202020;
-    margin: 0;
-}
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-}
-
-h2 {
-    color: #ffb07c;
-}
-
-h3 {
-    color: #FF9652;
-}
-
-p {
-    color: white;
-    font-weight: 600;
-}
-
 </style>
