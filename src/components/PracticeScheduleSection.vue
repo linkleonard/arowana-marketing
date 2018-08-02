@@ -15,15 +15,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 
 p {
     padding: 20px 40px;
 }
 
 div {
-    background: center / cover url("../assets/practice.jpg");
+    background: $darken-background-layer, center / cover url("../assets/practice.jpg");
     border: 1px solid transparent;
+    text-shadow: $darken-text-shadow;
 }
 
 h3 {

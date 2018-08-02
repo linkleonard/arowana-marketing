@@ -12,18 +12,19 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 h2 {
     margin: 20px;
 }
 
 p {
-    background: center / cover url("../assets/whoweare.jpg");
+    background: $darken-background-layer, center / cover url("../assets/whoweare.jpg");
     padding: 150px 20px 50px 20px;
     align-items: center;
 
     font-weight: 600;
     color: white;
+    text-shadow: $darken-text-shadow;
 }
 
 </style>

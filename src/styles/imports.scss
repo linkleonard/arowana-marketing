@@ -1,5 +1,8 @@
 $dark-text-shadow: transparentize(black, 0.3);
-$darken-background: transparentize(black, 0.3);
+$darken-background: transparentize(black, 0.7);
 
 $button-background-transparent: transparentize(black, 0.6);
 $button-background-transparent-hover: transparentize(black, 0.4);
+
+$darken-background-layer: linear-gradient(to bottom, $darken-background, $darken-background);
+$darken-text-shadow: $dark-text-shadow 2px 2px 5px;

@@ -24,10 +24,10 @@ export default {
 <style scoped lang="scss">
 
 div {
-    background: linear-gradient(to bottom, $darken-background, $darken-background), center / cover url("../assets/race.jpg");
+    background: $darken-background-layer, center / cover url("../assets/race.jpg");
     border: 1px solid transparent;
     padding: 50px;
-    text-shadow: $dark-text-shadow 2px 2px 5px;
+    text-shadow: $darken-text-shadow;
 }
 
 h3 {
