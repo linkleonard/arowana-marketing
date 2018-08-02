@@ -14,15 +14,17 @@
 </template>
 
 <script>
-import race from "../assets/race.jpg";
-import people from "../assets/whoweare.jpg";
+import hartford from "../assets/gallery-hartford-2017.jpg";
+import montreal from "../assets/gallery-montreal-2017-train.jpg";
+import jefferson from "../assets/gallery-port-jefferson-2017.jpg";
+import restaurant from "../assets/gallery-boston-restaurant-2017.jpg";
 
 const Gallery = {
   name: 'Gallery',
   data() {
     return {
       selectedImage: 0,
-      images: [race, people],
+      images: [hartford, montreal, jefferson, restaurant],
     };
   },
   methods: {
@@ -89,7 +91,7 @@ img {
     position: relative;
     display: flex;
     overflow: hidden;
-    max-height: 60vh;
+    height: 60vh;
     width: 100%;
 }
 
