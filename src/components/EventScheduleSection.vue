@@ -24,9 +24,10 @@ export default {
 <style scoped>
 
 div {
-    background: center / cover url("../assets/race.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), center / cover url("../assets/race.jpg");
     border: 1px solid transparent;
     padding: 50px;
+    text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
 }
 
 h3 {

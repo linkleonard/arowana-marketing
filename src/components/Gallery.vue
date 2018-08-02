@@ -69,6 +69,7 @@ export default Gallery;
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .carousel {
+    flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,6 +90,7 @@ img {
     display: flex;
     overflow: hidden;
     max-height: 60vh;
+    width: 100%;
 }
 
 .controls {
