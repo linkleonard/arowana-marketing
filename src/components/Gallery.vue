@@ -67,7 +67,7 @@ export default Gallery;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .carousel {
     flex: 1 1 auto;
     display: flex;
@@ -118,13 +118,13 @@ button {
     font-size: 24px;
     font-weight: 600;
     color: white;
-    background: rgba(0, 0, 0, 0.03);
+    background: $button-background-transparent;
     padding: 10px 20px;
     transition: background 100ms ease-in-out;
 }
 
 button:hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: $button-background-transparent-hover;
 }
 
 button:focus {
