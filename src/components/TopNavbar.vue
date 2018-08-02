@@ -3,9 +3,12 @@
   <img :src="logo" />
   <h1>Arowana <small>Dragon Boat Team</small></h1>
   <nav>
-    <a v-for="route in routes" :key="route.href" :href="'#' + route.href">
-      {{ route.label }}
-    </a>
+    <router-link to="/">Home</router-link>
+    <!-- <a v-for="route in routes" :key="route.href" :href="'#' + route.href"> -->
+    <!--   {{ route.label }} -->
+    <!-- </a> -->
+    <router-link to="/practice">Practice</router-link>
+    <router-link to="/gallery">Gallery</router-link>
   </nav>
 </section>
 </template>

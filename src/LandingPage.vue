@@ -1,8 +1,11 @@
 <template>
 <div id="app">
-  <TopNavbar :routes="routes" />
-  <router-view></router-view>
-  <SiteFooter />
+  <section
+    v-for="route in routes"
+    :key="route.href"
+    :is="route.component"
+    :id="route.href"
+    />
 </div>
 </template>
 
@@ -11,16 +14,13 @@ import TopNavbar from './components/TopNavbar.vue'
 import IntroSection from './components/IntroSection.vue'
 import JoinUsSection from './components/JoinUsSection.vue'
 import AboutSection from './components/AboutSection.vue'
+import Gallery from './components/Gallery.vue'
 import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
 import EventScheduleSection from './components/EventScheduleSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
 
 export default {
   name: 'app',
-  components: {
-    TopNavbar,
-    SiteFooter,
-  },
   data() {
     return {
       routes: [
@@ -30,19 +30,14 @@ export default {
           "component": IntroSection,
         },
         {
-          "href": "section-practice",
-          "label": "Practice",
-          "component": PracticeScheduleSection,
+          "href": "section-about",
+          "label": "About Us",
+          "component": AboutSection,
         },
         {
           "href": "section-races",
           "label": "Races",
           "component": EventScheduleSection,
-        },
-        {
-          "href": "section-about",
-          "label": "About Us",
-          "component": AboutSection,
         },
         {
           "href": "section-join",
