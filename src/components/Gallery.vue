@@ -118,7 +118,7 @@ img {
 
 button {
     border: 2px solid white;
-    font-size: 24px;
+    font-size: $font-size-large;
     font-weight: 600;
     color: white;
     background: $button-background-transparent;

@@ -93,7 +93,7 @@ p {
 }
 
 h3 {
-    font-size: 22.5px;
+    font-size: $font-size-large;
     margin: 10px;
     color:  $image-header-color;
 }
@@ -106,7 +106,7 @@ ul {
 
 li {
     color: $image-text-color;
-    font-size: 15x;
+    font-size: $font-size-normal;
     font-weight: 600;
 }
 

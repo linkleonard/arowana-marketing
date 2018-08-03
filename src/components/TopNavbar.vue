@@ -50,10 +50,12 @@ h1 {
     color: #dc671e;
     margin: 10px;
     text-align: left;
+    font-size: $font-size-large;
 }
 
 small {
     display: flex;
+    font-size: $font-size-normal;
 }
 
 nav {

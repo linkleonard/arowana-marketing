@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 body {
     background: #202020;
@@ -61,14 +61,17 @@ body {
 
 h2 {
     color: #ffb07c;
+    font-size: $font-size-larger;
 }
 
 h3 {
     color: #FF9652;
+    font-size: $font-size-large;
 }
 
 p {
     color: white;
+    font-size: $font-size-normal;
     font-weight: 600;
 }
 
