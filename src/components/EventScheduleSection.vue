@@ -1,23 +1,49 @@
 <template>
 <section :id="id">
   <h2>Upcoming Races</h2>
-  <div>
-    <h3>Baltimore</h3>
-    <p>June 23, 2018</p>
-    <h3>Montreal</h3>
-    <p>July 7, 2018</p>
-    <h3>New York</h3>
-    <p>August 11, 2018</p>
-    <h3>Hartford</h3>
-    <p>August 18, 2018</p>
+  <div v-for="race in races" :key="race.city">
+    <h3>{{ race.city }}</h3>
+    <p>{{ race.date }}</p>
+    <img :src="race.image" />
   </div>
 </section>
 </template>
 
 <script>
+import hartford from '../assets/cities/hartford.jpg';
+import baltimore from '../assets/cities/baltimore.jpg';
+import montreal from '../assets/cities/montreal.jpg';
+import newyork from '../assets/cities/newyork.jpg';
+
 export default {
   name: 'EventScheduleSection',
   props: ["id"],
+  data() {
+    return {
+      races: [
+        {
+          city: 'Baltimore',
+          date: 'June 23, 2018',
+          image: baltimore,
+        },
+        {
+          city: 'Montreal',
+          date: 'July 7, 2018',
+          image: montreal,
+        },
+        {
+          city: 'New York',
+          date: 'August 11, 2018',
+          image: newyork,
+        },
+        {
+          city: 'Hartford',
+          date: 'August 18, 2018',
+          image: hartford,
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -25,18 +51,38 @@ export default {
 <style scoped lang="scss">
 
 div {
-    background: $darken-background-layer, center / cover url("../assets/race.jpg");
-    padding: 50px;
+    /* background: $darken-background-layer, center / cover url("../assets/race.jpg"); */
+    position: relative;
+    padding: 20px;
     text-shadow: $darken-text-shadow;
+
+    &::after {
+        @extend %maximize;
+        position: absolute;
+        z-index: -1;
+
+        content: ' ';
+        background: $darken-background-more;
+    }
 }
 
 h3 {
     color: $image-header-color;
-    margin: 10px;
+    margin: 5px;
 }
 
 p {
     padding: 0;
     margin-top: 0;
 }
+
+img {
+    @extend %maximize;
+
+    position: absolute;
+    z-index: -2;
+
+    object-fit: cover;
+}
+
 </style>
