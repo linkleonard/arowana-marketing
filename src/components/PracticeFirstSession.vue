@@ -17,6 +17,7 @@
       You don't need to bring your own paddle and PFD, although
       you are welcome to. This will be provided at the docks.
     </p>
+    <p>If you have any additional questions, please check out our <router-link to="/faqs">FAQs page</router-link>.</p>
   </div>
 </section>
 </template>
@@ -34,15 +35,17 @@ export default {
 div {
     background: $darken-background-layer, center / cover url("../assets/practice.jpg");
     text-shadow: $darken-text-shadow;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
 p {
-    padding: 20px 40px;
+    padding: 0;
+    margin: 20px;
     color: $image-text-color;
     max-width: 400px;
 }
+
 </style>

@@ -7,6 +7,7 @@ import { faFacebookSquare, faInstagram, faGithubAlt } from '@fortawesome/free-br
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import LandingPage from './LandingPage.vue';
 import PracticePage from './PracticePage.vue';
+import FAQPage from './FAQPage.vue';
 import Gallery from './components/Gallery.vue';
 
 
@@ -28,6 +29,10 @@ const routes = [
       {
         path: '/practice',
         component: PracticePage,
+      },
+      {
+        path: '/faqs',
+        component: FAQPage,
       },
       {
         path: '/gallery',

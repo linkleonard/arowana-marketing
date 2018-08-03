@@ -3,7 +3,6 @@
   <PracticeIntro />
   <PracticeSchedule />
   <PracticeFirstSession />
-  <PracticeFAQs />
 </section>
 </template>
 
@@ -11,7 +10,6 @@
 import PracticeIntro from './components/PracticeIntro.vue';
 import PracticeSchedule from './components/PracticeSchedule.vue';
 import PracticeFirstSession from './components/PracticeFirstSession.vue';
-import PracticeFAQs from './components/PracticeFAQs.vue';
 
 export default {
   name: 'PracticeScheduleSection',
@@ -19,7 +17,6 @@ export default {
     PracticeIntro,
     PracticeSchedule,
     PracticeFirstSession,
-    PracticeFAQs,
   },
   props: ["id"],
 }

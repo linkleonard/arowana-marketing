@@ -8,6 +8,7 @@
   <nav :class="navigationVisible ? 'visible' : ''">
     <router-link to="/">Home</router-link>
     <router-link to="/practice">Practice</router-link>
+    <router-link to="/faqs">FAQs</router-link>
     <router-link to="/gallery">Gallery</router-link>
     <a :href="formLink">Join Us</a>
   </nav>

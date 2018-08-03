@@ -66,13 +66,17 @@ h2 {
 
 h3 {
     color: #FF9652;
-    font-size: $font-size-large;
+    font-size: $font-size-larger;
 }
 
 p {
     color: white;
     font-size: $font-size-normal;
     font-weight: 600;
+}
+
+a {
+    color: white;
 }
 
 </style>
