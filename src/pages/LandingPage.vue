@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import IntroSection from './components/IntroSection.vue'
-import JoinUsSection from './components/JoinUsSection.vue'
-import AboutSection from './components/AboutSection.vue'
-import EventScheduleSection from './components/EventScheduleSection.vue'
+import IntroSection from '../components/IntroSection.vue'
+import JoinUsSection from '../components/JoinUsSection.vue'
+import AboutSection from '../components/AboutSection.vue'
+import EventScheduleSection from '../components/EventScheduleSection.vue'
 
 export default {
   name: 'app',

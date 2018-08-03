@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import PracticeIntro from './components/PracticeIntro.vue';
-import PracticeSchedule from './components/PracticeSchedule.vue';
-import PracticeFirstSession from './components/PracticeFirstSession.vue';
+import PracticeIntro from '../components/PracticeIntro.vue';
+import PracticeSchedule from '../components/PracticeSchedule.vue';
+import PracticeFirstSession from '../components/PracticeFirstSession.vue';
 
 export default {
   name: 'PracticeScheduleSection',

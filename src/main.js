@@ -5,10 +5,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagram, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import LandingPage from './LandingPage.vue';
-import PracticePage from './PracticePage.vue';
-import FAQPage from './FAQPage.vue';
-import Gallery from './components/Gallery.vue';
+
+import LandingPage from './pages/LandingPage.vue';
+import PracticePage from './pages/PracticePage.vue';
+import FAQPage from './pages/FAQPage.vue';
+import Gallery from './pages/GalleryPage.vue';
 
 
 library.add(faBars, faFacebookSquare, faInstagram, faGithubAlt);
