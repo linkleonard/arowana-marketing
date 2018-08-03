@@ -6,8 +6,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagram, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import LandingPage from './LandingPage.vue';
+import PracticePage from './PracticePage.vue';
 import Gallery from './components/Gallery.vue';
-import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
+
 
 library.add(faBars, faFacebookSquare, faInstagram, faGithubAlt);
 
@@ -26,7 +27,7 @@ const routes = [
       },
       {
         path: '/practice',
-        component: PracticeScheduleSection,
+        component: PracticePage,
       },
       {
         path: '/gallery',

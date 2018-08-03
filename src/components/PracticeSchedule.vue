@@ -1,15 +1,5 @@
 <template>
 <section :id="id">
-  <div class="container intro">
-    <p>Have what it takes to paddle?</p>
-
-    <p>
-      Whether you're a seasoned athlete, or new to team sports, you are
-      welcome to join us at practice to see if dragon boat is for you.
-    </p>
-
-    <a :href="formLink">Sign up</a>
-  </div>
   <h2>Practice Schedule</h2>
   <div class="container">
     <div class="session" v-for="session in sessions" :key="session.day">
@@ -18,20 +8,6 @@
         <li v-for="slot in session.slots" :key="slot">{{ slot }}</li>
       </ul>
     </div>
-  </div>
-  <h2>Your First Practice</h2>
-  <div class="container">
-    <p>
-      Please show up 15 minutes before practice starts.
-      Lin will provide a short introduction to the sport, where the stroke, basic form and terminology will be introduced.
-      You will also get a chance to familiarize yourself the stroke while on the docks, before we launch.
-    </p>
-    <p>
-      Make sure to bring water, and wear comfortable athletic wear.
-      We also recommended bringing sunglasses, a hat, and water shoes.
-      You may want to also bring a change of clothes, as you will most likely get wet.
-    </p>
-    <p class="footnote">Practices may be cancelled depending on inclement weather.</p>
   </div>
 </section>
 </template>
@@ -72,7 +48,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss" scoped>
 
 div.container {
     background: $darken-background-layer, center / cover url("../assets/practice.jpg");
@@ -86,16 +62,14 @@ div.container {
 p {
     padding: 20px 40px;
     color: $image-text-color;
-}
-
-.intro p {
     max-width: 400px;
 }
 
 h3 {
+    margin: 30px 0 10px 0;
+
     font-size: $font-size-large;
-    margin: 10px;
-    color:  $image-header-color;
+    color: $image-header-color;
 }
 
 ul {
@@ -105,6 +79,9 @@ ul {
 }
 
 li {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     color: $image-text-color;
     font-size: $font-size-normal;
     font-weight: 600;
