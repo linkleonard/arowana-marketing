@@ -76,7 +76,6 @@ export default {
 
 div.container {
     background: $darken-background-layer, center / cover url("../assets/practice.jpg");
-    border: 1px solid transparent;
     text-shadow: $darken-text-shadow;
     padding: 20px;
     display: flex;

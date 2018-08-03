@@ -26,7 +26,6 @@ export default {
 
 div {
     background: $darken-background-layer, center / cover url("../assets/race.jpg");
-    border: 1px solid transparent;
     padding: 50px;
     text-shadow: $darken-text-shadow;
 }
