@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import hartford from "../assets/gallery-hartford-2017.jpg";
-import montreal from "../assets/gallery-montreal-2017-train.jpg";
-import jefferson from "../assets/gallery-port-jefferson-2017.jpg";
-import restaurant from "../assets/gallery-boston-restaurant-2017.jpg";
+import hartford from "../assets/gallery/hartford-2017.jpg";
+import montreal from "../assets/gallery/montreal-2017-train.jpg";
+import jefferson from "../assets/gallery/port-jefferson-2017.jpg";
+import restaurant from "../assets/gallery/boston-restaurant-2017.jpg";
 
 const Gallery = {
   name: 'Gallery',
@@ -70,7 +70,7 @@ export default Gallery;
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .carousel {
     flex: 1 1 auto;
     display: flex;
