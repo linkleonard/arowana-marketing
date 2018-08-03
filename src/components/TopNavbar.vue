@@ -5,7 +5,9 @@
   <button @click="toggleNavigation">
     <font-awesome-icon icon="bars"></font-awesome-icon>
   </button>
-  <nav :class="navigationVisible ? 'visible' : ''">
+  <nav
+    :class="navigationVisible ? 'visible' : ''"
+    >
     <router-link to="/">Home</router-link>
     <router-link to="/practice">Practice</router-link>
     <router-link to="/faqs">FAQs</router-link>
@@ -44,6 +46,7 @@ section {
     flex-flow: row wrap;
     padding: 10px 20px;
     align-items: center;
+    position: relative;
 }
 
 h1 {
@@ -61,15 +64,28 @@ small {
 
 nav {
     flex: 0 0 0;
-    display: none;
     align-items: center;
     flex-flow: row wrap;
 
     @media screen and (max-width: 767px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        flex-basis: 100%;
+        justify-content: center;
+
+        background: $header-background;
+        transition: transform 400ms ease-out, opacity 200ms ease-out;
+        transform: translateY(100%) scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+
         &.visible {
             display: flex;
-            flex-basis: 100%;
-            justify-content: center;
+            transform: translateY(100%) scaleY(1);
+            opacity: 1;
         }
     }
 
