@@ -2,11 +2,11 @@
 <section>
   <img :src="logo" />
   <h1>Arowana <small>Dragon Boat Team</small></h1>
-  <nav>
+  <button @click="toggleNavigation">
+    <font-awesome-icon icon="bars"></font-awesome-icon>
+  </button>
+  <nav :class="navigationVisible ? 'visible' : ''">
     <router-link to="/">Home</router-link>
-    <!-- <a v-for="route in routes" :key="route.href" :href="'#' + route.href"> -->
-    <!--   {{ route.label }} -->
-    <!-- </a> -->
     <router-link to="/practice">Practice</router-link>
     <router-link to="/gallery">Gallery</router-link>
     <a :href="formLink">Join Us</a>
@@ -21,9 +21,15 @@ export default {
   name: 'TopNavbar',
   data() {
     return {
+      navigationVisible: false,
       logo,
       formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1",
     };
+  },
+  methods: {
+    toggleNavigation() {
+      this.navigationVisible = !this.navigationVisible;
+    },
   },
   props: ["routes"],
 }
@@ -40,25 +46,49 @@ section {
 }
 
 h1 {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     color: #dc671e;
     margin: 10px;
     text-align: left;
 }
 
 small {
-    display: block;
+    display: flex;
 }
 
 nav {
-    flex: 1 0 auto;
-    display: flex;
+    flex: 0 0 0;
+    display: none;
     align-items: center;
+    flex-flow: row wrap;
+
+    @media screen and (max-width: 767px) {
+        &.visible {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
 }
 
-@media screen and (min-width: 768px) {
-    nav {
-        justify-content: flex-end;
+
+button {
+    flex: 0 0 auto;
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 4px;
+    padding: 10px 15px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+        flex-basis: 0;
     }
 }
 
@@ -71,6 +101,6 @@ img {
     flex: 0 0 auto;
     width: 40px;
     height: 40px;
-
 }
+
 </style>

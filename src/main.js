@@ -2,13 +2,14 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagram, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import LandingPage from './LandingPage.vue';
 import Gallery from './components/Gallery.vue';
 import PracticeScheduleSection from './components/PracticeScheduleSection.vue'
 
-library.add(faFacebookSquare, faInstagram, faGithubAlt);
+library.add(faBars, faFacebookSquare, faInstagram, faGithubAlt);
 
 Vue.use(VueRouter);
 
