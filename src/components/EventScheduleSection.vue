@@ -1,10 +1,12 @@
 <template>
 <section :id="id">
   <h2>Upcoming Races</h2>
-  <div v-for="race in races" :key="race.city">
-    <h3>{{ race.city }}</h3>
-    <p>{{ race.date }}</p>
-    <img :src="race.image" />
+  <div class="container">
+    <div v-for="race in races" :key="race.city" class="race">
+      <h3>{{ race.city }}</h3>
+      <p>{{ race.date }}</p>
+      <img :src="race.image" />
+    </div>
   </div>
 </section>
 </template>
@@ -50,11 +52,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-div {
-    /* background: $darken-background-layer, center / cover url("../assets/race.jpg"); */
+.container {
+    padding: 1px 0;
+    background: $section-background;
+}
+
+.race {
     position: relative;
-    padding: 20px;
+    margin: 20px 0;
+    padding: 50px;
     text-shadow: $darken-text-shadow;
+    z-index: 0;
 
     &::after {
         @extend %maximize;
