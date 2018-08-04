@@ -1,9 +1,13 @@
 <template>
 <section :id="id">
-  <h2>Join Us</h2>
+  <h2>Practice</h2>
   <div>
-    <p>Like water sports?</p>
-    <p>Want to be part of a team of like-minded people?</p>
+    <p>Practice sessions are available 3 times a week.</p>
+    <p>
+      We do not have any fitness requirements. If you are interested,
+      please join us for a session to see if dragon boat is the right
+      sport for you!
+    </p>
     <router-link to="/practice">Learn More About Practice</router-link>
   </div>
 </section>

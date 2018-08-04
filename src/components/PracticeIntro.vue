@@ -7,7 +7,7 @@
     welcome to join us at practice to see if dragon boat is for you.
   </p>
 
-  <a :href="formLink">Sign up</a>
+  <a :href="formLink">Sign up for practice</a>
 </section>
 </template>
 

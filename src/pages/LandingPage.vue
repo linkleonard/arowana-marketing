@@ -13,6 +13,7 @@
 import IntroSection from "../components/IntroSection.vue";
 import JoinUsSection from "../components/JoinUsSection.vue";
 import AboutSection from "../components/AboutSection.vue";
+import PracticeSummarySection from "../components/PracticeSummarySection.vue";
 import EventScheduleSection from "../components/EventScheduleSection.vue";
 
 export default {
@@ -29,6 +30,9 @@ export default {
           href: "section-about",
           label: "About Us",
           component: AboutSection
+        },
+        {
+          component: PracticeSummarySection,
         },
         {
           href: "section-races",
