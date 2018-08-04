@@ -12,85 +12,83 @@
 </template>
 
 <script>
-import hartford from '../assets/cities/hartford.jpg';
-import baltimore from '../assets/cities/baltimore.jpg';
-import montreal from '../assets/cities/montreal.jpg';
-import newyork from '../assets/cities/newyork.jpg';
+import hartford from "../assets/cities/hartford.jpg";
+import baltimore from "../assets/cities/baltimore.jpg";
+import montreal from "../assets/cities/montreal.jpg";
+import newyork from "../assets/cities/newyork.jpg";
 
 export default {
-  name: 'EventScheduleSection',
+  name: "EventScheduleSection",
   props: ["id"],
   data() {
     return {
       races: [
         {
-          city: 'Baltimore',
-          date: 'June 23, 2018',
-          image: baltimore,
+          city: "Baltimore",
+          date: "June 23, 2018",
+          image: baltimore
         },
         {
-          city: 'Montreal',
-          date: 'July 7, 2018',
-          image: montreal,
+          city: "Montreal",
+          date: "July 7, 2018",
+          image: montreal
         },
         {
-          city: 'New York',
-          date: 'August 11, 2018',
-          image: newyork,
+          city: "New York",
+          date: "August 11, 2018",
+          image: newyork
         },
         {
-          city: 'Hartford',
-          date: 'August 18, 2018',
-          image: hartford,
-        },
+          city: "Hartford",
+          date: "August 18, 2018",
+          image: hartford
+        }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 .container {
-    padding: 1px 0;
-    background: $section-background;
+  padding: 1px 0;
+  background: $section-background;
 }
 
 .race {
-    position: relative;
-    margin: 20px 0;
-    padding: 50px;
-    text-shadow: $darken-text-shadow;
-    z-index: 0;
+  position: relative;
+  margin: 20px 0;
+  padding: 50px;
+  text-shadow: $darken-text-shadow;
+  z-index: 0;
 
-    &::after {
-        @extend %maximize;
-        position: absolute;
-        z-index: -1;
+  &::after {
+    @extend %maximize;
+    position: absolute;
+    z-index: -1;
 
-        content: ' ';
-        background: $darken-background-more;
-    }
+    content: " ";
+    background: $darken-background-more;
+  }
 }
 
 h3 {
-    color: $image-header-color;
-    margin: 5px;
+  color: $image-header-color;
+  margin: 5px;
 }
 
 p {
-    padding: 0;
-    margin-top: 0;
+  padding: 0;
+  margin-top: 0;
 }
 
 img {
-    @extend %maximize;
+  @extend %maximize;
 
-    position: absolute;
-    z-index: -2;
+  position: absolute;
+  z-index: -2;
 
-    object-fit: cover;
+  object-fit: cover;
 }
-
 </style>

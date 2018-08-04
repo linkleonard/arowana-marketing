@@ -7,25 +7,25 @@
 
 <script>
 export default {
-  name: 'IntroSection',
-  props: ["id"],
-}
+  name: "IntroSection",
+  props: ["id"]
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h2 {
-    margin: 20px;
+  margin: 20px;
 }
 
 p {
-    background: $darken-background-layer, center / cover url("../assets/whoweare.jpg");
-    padding: 150px 20px 50px 20px;
-    align-items: center;
+  background: $darken-background-layer,
+    center / cover url("../assets/whoweare.jpg");
+  padding: 150px 20px 50px 20px;
+  align-items: center;
 
-    font-weight: 600;
-    color: white;
-    text-shadow: $darken-text-shadow;
+  font-weight: 600;
+  color: white;
+  text-shadow: $darken-text-shadow;
 }
-
 </style>

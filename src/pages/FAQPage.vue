@@ -65,58 +65,56 @@
 
 <script>
 export default {
-  name: 'PracticeFAQs',
-  props: ["id"],
-}
+  name: "PracticeFAQs",
+  props: ["id"]
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
 div {
-    padding: 20px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 p {
-    padding: 20px 40px;
-    color: $image-text-color;
-    margin: 0;
-    padding: 10px;
-    max-width: 400px;
+  padding: 20px 40px;
+  color: $image-text-color;
+  margin: 0;
+  padding: 10px;
+  max-width: 400px;
 }
 
 h3 {
-    margin: 10px;
+  margin: 10px;
 
-    font-size: $font-size-large;
-    color: $image-header-color;
+  font-size: $font-size-large;
+  color: $image-header-color;
 }
 
 h4 {
-    margin: 20px 0 10px 0;
+  margin: 20px 0 10px 0;
 
-    font-size: $font-size-normal;
-    color: $image-header-color;
+  font-size: $font-size-normal;
+  color: $image-header-color;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 30px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 30px 0;
 }
 
 li {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    color: $image-text-color;
-    font-size: $font-size-normal;
-    font-weight: 600;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: $image-text-color;
+  font-size: $font-size-normal;
+  font-weight: 600;
 
-    margin: 20px;
+  margin: 20px;
 }
-
 </style>

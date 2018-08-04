@@ -24,28 +24,27 @@
 
 <script>
 export default {
-  name: 'PracticeFirstSession',
-  props: ["id"],
-}
+  name: "PracticeFirstSession",
+  props: ["id"]
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
 div {
-    background: $darken-background-layer, center / cover url("../assets/practice.jpg");
-    text-shadow: $darken-text-shadow;
-    padding: 40px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  background: $darken-background-layer,
+    center / cover url("../assets/practice.jpg");
+  text-shadow: $darken-text-shadow;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 p {
-    padding: 0;
-    margin: 20px;
-    color: $image-text-color;
-    max-width: 400px;
+  padding: 0;
+  margin: 20px;
+  color: $image-text-color;
+  max-width: 400px;
 }
-
 </style>

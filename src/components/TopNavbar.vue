@@ -18,108 +18,106 @@
 </template>
 
 <script>
-import logo from '../assets/logo.jpg';
+import logo from "../assets/logo.jpg";
 
 export default {
-  name: 'TopNavbar',
+  name: "TopNavbar",
   data() {
     return {
       navigationVisible: false,
       logo,
-      formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1",
+      formLink: "https://goo.gl/forms/1WwvwHku8iz9rh3m1"
     };
   },
   methods: {
     toggleNavigation() {
       this.navigationVisible = !this.navigationVisible;
-    },
+    }
   },
-  props: ["routes"],
-}
+  props: ["routes"]
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 section {
-    background: $header-background;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 10px 20px;
-    align-items: center;
-    position: relative;
+  background: $header-background;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 20px;
+  align-items: center;
+  position: relative;
 }
 
 h1 {
-    flex: 1 1 auto;
-    color: #dc671e;
-    margin: 10px;
-    text-align: left;
-    font-size: $font-size-large;
+  flex: 1 1 auto;
+  color: #dc671e;
+  margin: 10px;
+  text-align: left;
+  font-size: $font-size-large;
 }
 
 small {
-    display: flex;
-    font-size: $font-size-normal;
+  display: flex;
+  font-size: $font-size-normal;
 }
 
 nav {
-    flex: 0 0 0;
-    align-items: center;
-    flex-flow: row wrap;
+  flex: 0 0 0;
+  align-items: center;
+  flex-flow: row wrap;
 
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-        flex-basis: 100%;
-        justify-content: center;
+    flex-basis: 100%;
+    justify-content: center;
 
-        background: $header-background;
-        transition: transform 400ms ease-out, opacity 200ms ease-out;
-        transform: translateY(100%) scaleY(0);
-        transform-origin: top;
-        opacity: 0;
+    background: $header-background;
+    transition: transform 400ms ease-out, opacity 200ms ease-out;
+    transform: translateY(100%) scaleY(0);
+    transform-origin: top;
+    opacity: 0;
 
-        &.visible {
-            display: flex;
-            transform: translateY(100%) scaleY(1);
-            opacity: 1;
-        }
+    &.visible {
+      display: flex;
+      transform: translateY(100%) scaleY(1);
+      opacity: 1;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-basis: auto;
-        justify-content: flex-end;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
 }
 
-
 button {
-    flex: 0 0 auto;
-    color: white;
-    border: 1px solid white;
-    background: $nav-button-background;
-    border-radius: 4px;
-    padding: 10px 15px;
+  flex: 0 0 auto;
+  color: white;
+  border: 1px solid white;
+  background: $nav-button-background;
+  border-radius: 4px;
+  padding: 10px 15px;
 
-    @media screen and (min-width: 768px) {
-        display: none;
-        flex-basis: 0;
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
+    flex-basis: 0;
+  }
 }
 
 a {
-    margin: 10px;
-    color: white;
+  margin: 10px;
+  color: white;
 }
 
 img {
-    flex: 0 0 auto;
-    width: 40px;
-    height: 40px;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
 }
-
 </style>

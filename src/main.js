@@ -1,53 +1,57 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import App from './App.vue';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookSquare, faInstagram, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import Vue from "vue";
+import VueRouter from "vue-router";
+import App from "./App.vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagram,
+  faGithubAlt
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import LandingPage from './pages/LandingPage.vue';
-import PracticePage from './pages/PracticePage.vue';
-import FAQPage from './pages/FAQPage.vue';
-import Gallery from './pages/GalleryPage.vue';
-
+import LandingPage from "./pages/LandingPage.vue";
+import PracticePage from "./pages/PracticePage.vue";
+import FAQPage from "./pages/FAQPage.vue";
+import Gallery from "./pages/GalleryPage.vue";
 
 library.add(faBars, faFacebookSquare, faInstagram, faGithubAlt);
 
 Vue.use(VueRouter);
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false;
 
 const routes = [
-  { path: '/', component: App,
+  {
+    path: "/",
+    component: App,
     children: [
       {
-        path: '',
-        component: LandingPage,
+        path: "",
+        component: LandingPage
       },
       {
-        path: '/practice',
-        component: PracticePage,
+        path: "/practice",
+        component: PracticePage
       },
       {
-        path: '/faqs',
-        component: FAQPage,
+        path: "/faqs",
+        component: FAQPage
       },
       {
-        path: '/gallery',
-        component: Gallery,
-      },
+        path: "/gallery",
+        component: Gallery
+      }
     ]
-  },
+  }
 ];
 
-
 const router = new VueRouter({
-  routes,
-})
+  routes
+});
 
 new Vue({
-  router,
-}).$mount('#app');
+  router
+}).$mount("#app");

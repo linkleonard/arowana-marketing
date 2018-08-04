@@ -18,58 +18,57 @@
 
 <script>
 export default {
-  name: 'SiteFooter',
+  name: "SiteFooter",
   data() {
     return {
       links: [
         {
           site: "Facebook",
-          icon: ['fab', 'facebook-square'],
-          label: '@ArowanaDB',
-          uri: 'https://www.facebook.com/ArowanaDB/',
+          icon: ["fab", "facebook-square"],
+          label: "@ArowanaDB",
+          uri: "https://www.facebook.com/ArowanaDB/"
         },
         {
           site: "Instagram",
-          icon: ['fab', 'instagram'],
-          label: '@arowanadb',
-          uri: 'https://www.instagram.com/arowanadb/',
-        },
+          icon: ["fab", "instagram"],
+          label: "@arowanadb",
+          uri: "https://www.instagram.com/arowanadb/"
+        }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
 footer {
-    background: $footer-background;
-    padding: 1px;
+  background: $footer-background;
+  padding: 1px;
 }
 
 .social {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    margin: 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: 20px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .social a {
-    margin: 10px;
+  margin: 10px;
 }
 
 span {
-    margin-left: 5px;
-    text-decoration: underline;
+  margin-left: 5px;
+  text-decoration: underline;
 }
 
 .copyright {
-    color: white;
-    margin: 30px 0 40px 0;
+  color: white;
+  margin: 30px 0 40px 0;
 }
-
 </style>
