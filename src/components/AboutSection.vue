@@ -17,7 +17,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss" scoped>
 div {
   padding: 240px 40px 60px 40px;
   background: $darken-background-layer,

@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 footer {
   background: $footer-background;
   padding: 1px;
