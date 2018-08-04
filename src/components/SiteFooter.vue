@@ -54,7 +54,7 @@ footer {
 }
 
 a {
-  color: white;
+  color: $link-color;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ span {
 }
 
 .copyright {
-  color: white;
+  color: $text-color;
   margin: 30px 0 40px 0;
 }
 </style>

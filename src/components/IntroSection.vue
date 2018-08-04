@@ -25,7 +25,7 @@ p {
   align-items: center;
 
   font-weight: 600;
-  color: white;
+  color: $image-text-color;
   text-shadow: $darken-text-shadow;
 }
 </style>

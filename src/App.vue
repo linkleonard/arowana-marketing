@@ -69,12 +69,12 @@ h3 {
 }
 
 p {
-  color: white;
+  color: $text-color;
   font-size: $font-size-normal;
   font-weight: 600;
 }
 
 a {
-  color: white;
+  color: $link-color;
 }
 </style>

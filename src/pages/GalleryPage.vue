@@ -118,10 +118,10 @@ img {
 }
 
 button {
-  border: 2px solid white;
+  border: 2px solid $text-color;
   font-size: $font-size-large;
   font-weight: 600;
-  color: white;
+  color: $text-color;
   background: $button-background-transparent;
   padding: 10px 20px;
   transition: background 100ms ease-in-out;

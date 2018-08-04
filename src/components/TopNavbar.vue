@@ -98,8 +98,8 @@ nav {
 
 button {
   flex: 0 0 auto;
-  color: white;
-  border: 1px solid white;
+  color: $text-color;
+  border: 1px solid $nav-button-border;
   background: $nav-button-background;
   border-radius: 4px;
   padding: 10px 15px;
@@ -112,7 +112,7 @@ button {
 
 a {
   margin: 10px;
-  color: white;
+  color: $link-color;
 }
 
 img {

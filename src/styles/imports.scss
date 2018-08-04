@@ -1,3 +1,6 @@
+$text-color: white;
+$link-color: white;
+
 $image-text-color: white;
 $image-header-color: #cfcfcf;
 
@@ -12,6 +15,7 @@ $darken-background-layer: linear-gradient(to bottom, $darken-background, $darken
 $darken-text-shadow: $dark-text-shadow 2px 2px 5px;
 
 $nav-button-background: transparent;
+$nav-button-border: white;
 
 $header-background: rgba(20, 20, 20, 1);
 $footer-background: rgba(40, 40, 40, 1);
