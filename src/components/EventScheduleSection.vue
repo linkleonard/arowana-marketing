@@ -58,7 +58,7 @@ export default {
 
 .race {
   position: relative;
-  margin: 20px 0;
+  margin: 5px 0;
   padding: 50px;
   text-shadow: $darken-text-shadow;
   z-index: 0;
