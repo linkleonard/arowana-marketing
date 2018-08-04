@@ -33,13 +33,21 @@
       </p>
     </li>
   </ul>
+  <p>Have more questions? <a :href="formLink">Please contact us</a>.</p>
 </section>
 </template>
 
 <script>
+import { formLink } from "../constants.js";
+
 export default {
   name: "PracticeFAQs",
-  props: ["id"]
+  props: ["id"],
+  data() {
+    return {
+      formLink
+    };
+  }
 };
 </script>
 
@@ -89,5 +97,11 @@ li {
   font-weight: 600;
 
   margin: 20px;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 </style>
