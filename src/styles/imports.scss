@@ -1,3 +1,5 @@
+$page-background: #202020;
+
 $text-color: white;
 $link-color: white;
 
@@ -19,7 +21,12 @@ $nav-button-border: white;
 
 $header-background: rgba(20, 20, 20, 1);
 $footer-background: rgba(40, 40, 40, 1);
+
+$section-header-background: $page-background;
 $section-background: rgba(10, 10, 10, 1);
 
 $button-background: #75482a;
 $button-text: white;
+
+$list-alternating-background-odd: #1b1b1b;
+$list-alternating-background-even: #171717;

@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss">
 body {
-  background: #202020;
+  background: $page-background;
   margin: 0;
 }
 

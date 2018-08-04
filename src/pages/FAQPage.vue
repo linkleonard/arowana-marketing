@@ -68,6 +68,12 @@ p {
   max-width: 400px;
 }
 
+h2 {
+  background: $section-header-background;
+  margin: 0;
+  padding: 20px;
+}
+
 h3 {
   margin: 10px;
 
@@ -75,17 +81,10 @@ h3 {
   color: $image-header-color;
 }
 
-h4 {
-  margin: 20px 0 10px 0;
-
-  font-size: $font-size-normal;
-  color: $image-header-color;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0 30px 0;
+  margin: 0;
 }
 
 li {
@@ -96,12 +95,28 @@ li {
   font-size: $font-size-normal;
   font-weight: 600;
 
-  margin: 20px;
+  padding: 20px;
+  margin: 5px 0;
+
+  background: $list-alternating-background-odd;
+
+  &:nth-child(2n) {
+    background: $list-alternating-background-even;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 section {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: stretch;
+  background: $section-background;
+
+  > p {
+    margin: auto;
+  }
 }
 </style>
