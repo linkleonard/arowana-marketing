@@ -21,36 +21,6 @@
       </p>
     </li>
     <li>
-      <h3>What's practice like?</h3>
-      <p>
-        It depends on what part of the season it is. Generally, we
-        have two kinds of practice sessions, depending on what part
-        of the season and who shows up.
-      </p>
-      <p>
-        The sessions will start with a short pep-talk explaining
-        what the focus of the session will be. The warm-up will
-        typically be a 10-15 minute piece of non-stop paddling at a
-        moderate pace, followed up with the main drills of the day.
-      </p>
-      <h4>Technical Sessions</h4>
-      <p>
-        Technical sessions typically include drills designed to
-        correct form and technique. There may be some endurance
-        pieces added as well.
-      </p>
-      <h4>Race Preparation Sessions</h4>
-      <p>
-        Race prep sessions are held usually on Saturdays, with as
-        much of the race crew for the upcoming races. These sessions
-        focus on speed and endurance, depending on the experience of
-        the paddlers available. Emphasis is placed on team cohesion,
-        where we get used to paddling together as a crew and learn
-        how to work with our teammates. These are the most intense
-        of the sessions.
-      </p>
-    </li>
-    <li>
       <h3>How safe is the boat? What happens if the boat flips?</h3>
       <p>
         Our boat has never capsized in the 14 years our crew has been
