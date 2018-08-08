@@ -19,13 +19,11 @@ h2 {
 }
 
 p {
+  @extend %image-section-text;
+
   background: $darken-background-layer,
     center / cover url("../assets/whoweare.jpg");
-  padding: 150px 20px 50px 20px;
-  align-items: center;
-
-  font-weight: 600;
-  color: $image-text-color;
-  text-shadow: $darken-text-shadow;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }
 </style>

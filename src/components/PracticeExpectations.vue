@@ -68,10 +68,8 @@ div {
 }
 
 p {
+  @extend %image-section-text;
   padding: 0;
-  margin: 20px;
-  color: $image-text-color;
-  max-width: 400px;
 }
 
 h3 {

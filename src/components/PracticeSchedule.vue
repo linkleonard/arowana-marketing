@@ -53,9 +53,7 @@ div.container {
 }
 
 p {
-  padding: 20px 40px;
-  color: $image-text-color;
-  max-width: 400px;
+  @extend %image-section-text;
 }
 
 h3 {

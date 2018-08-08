@@ -3,3 +3,19 @@ $font-size-small: 12.5px;
 $font-size-normal: 15px;
 $font-size-large: 20px;
 $font-size-larger: 25px;
+
+%section-text {
+  padding: 20px 40px;
+
+  max-width: 400px;
+  align-items: center;
+  font-weight: 600;
+}
+
+
+%image-section-text {
+  @extend %section-text;
+
+  color: $image-text-color;
+  text-shadow: $darken-text-shadow;
+}
