@@ -5,8 +5,8 @@
   <PracticeFirstSession />
   <PracticeExpectations />
   <p>
-    If you have any additional questions, please check out
-    our <router-link to="/faqs">FAQs page</router-link>.
+    Have more questions? Please check our
+    <router-link to="/faqs">FAQs</router-link>.
   </p>
 </section>
 </template>
