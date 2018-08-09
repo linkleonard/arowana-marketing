@@ -41,13 +41,6 @@ p {
   @extend %image-section-text;
 }
 
-h3 {
-  margin: 30px 0 10px 0;
-
-  font-size: $font-size-large;
-  color: $image-header-color;
-}
-
 a {
   @extend %main-button;
 }

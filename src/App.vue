@@ -59,12 +59,12 @@ body {
 }
 
 h2 {
-  color: #ffb07c;
+  color: $section-header-color;
   font-size: $font-size-larger;
 }
 
 h3 {
-  color: #ff9652;
+  color: $subsection-header-color;
   font-size: $font-size-larger;
 }
 

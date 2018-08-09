@@ -60,7 +60,7 @@ h3 {
   margin: 30px 0 10px 0;
 
   font-size: $font-size-large;
-  color: $image-header-color;
+  color: $image-subheader-color;
 }
 
 ul {
