@@ -72,11 +72,4 @@ p {
   padding: 0;
 }
 
-h3 {
-  margin: 10px;
-
-  font-size: $font-size-large;
-  color: $image-header-color;
-}
-
 </style>

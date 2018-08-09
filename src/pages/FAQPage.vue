@@ -74,11 +74,6 @@ h2 {
   padding: 20px;
 }
 
-h3 {
-  margin: 10px;
-  font-size: $font-size-large;
-}
-
 ul {
   list-style-type: none;
   padding: 0;

@@ -64,8 +64,9 @@ h2 {
 }
 
 h3 {
+  margin: 10px;
   color: $subsection-header-color;
-  font-size: $font-size-larger;
+  font-size: $font-size-large;
 }
 
 p {

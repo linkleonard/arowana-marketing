@@ -58,8 +58,6 @@ p {
 
 h3 {
   margin: 30px 0 10px 0;
-
-  font-size: $font-size-large;
   color: $image-subheader-color;
 }
 
