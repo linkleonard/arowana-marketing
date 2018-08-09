@@ -61,11 +61,10 @@ div {
 }
 
 p {
-  padding: 20px 40px;
-  color: $image-text-color;
+  @extend %section-text;
+
   margin: 0;
   padding: 10px;
-  max-width: 400px;
 }
 
 h2 {
