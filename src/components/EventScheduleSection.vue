@@ -5,7 +5,7 @@
     <div v-for="race in races" :key="race.city" class="race">
       <h3>{{ race.city }}</h3>
       <p>{{ race.date }}</p>
-      <img :src="race.image" />
+      <img :src="race.image" :style="`object-position: ${race.objectPosition}`"/>
     </div>
   </div>
 </section>
@@ -26,22 +26,26 @@ export default {
         {
           city: "Baltimore",
           date: "June 23, 2018",
-          image: baltimore
+          image: baltimore,
+          objectPosition: 'center',
         },
         {
           city: "Montreal",
           date: "July 7, 2018",
-          image: montreal
+          image: montreal,
+          objectPosition: 'center',
         },
         {
           city: "New York",
           date: "August 11, 2018",
-          image: newyork
+          image: newyork,
+          objectPosition: '50% 25%',
         },
         {
           city: "Hartford",
           date: "August 18, 2018",
-          image: hartford
+          image: hartford,
+          objectPosition: '50% 25%',
         }
       ]
     };
