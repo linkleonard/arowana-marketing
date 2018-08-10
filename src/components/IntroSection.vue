@@ -1,7 +1,12 @@
 <template>
 <section :id="id">
   <h2>Who We Are</h2>
-  <p>We are a group of friendly folks from different walks of life, with the goal of having fun together.</p>
+  <div>
+    <p>
+      We are a group of friendly folks from different walks of life,
+      with the goal of having fun together.
+    </p>
+  </div>
 </section>
 </template>
 
@@ -18,12 +23,14 @@ h2 {
   margin: 20px;
 }
 
-p {
-  @extend %image-section-text;
-
+div {
   background: $darken-background-layer,
     center / cover url("../assets/whoweare.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
+}
+
+p {
+  @extend %image-section-text;
 }
 </style>
