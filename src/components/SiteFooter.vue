@@ -1,9 +1,12 @@
 <template>
 <footer>
   <div class="social">
+    <p>Find us on social media!</p>
     <a v-for="link in links" :key="link.site" :href="link.uri">
-      <font-awesome-icon :icon="link.icon"></font-awesome-icon>
-      <span>{{ link.label }}</span>
+      <font-awesome-icon
+        :icon="link.icon"
+        :title="`${link.site} ${link.label}`">
+      </font-awesome-icon>
     </a>
   </div>
   <div class="copyright">
@@ -48,7 +51,7 @@ footer {
 
 .social {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: center;
   margin: 20px;
 }
@@ -60,6 +63,12 @@ a {
 
 .social a {
   margin: 10px;
+  font-size: 30px;
+}
+
+p {
+  flex: 1 0 100%;
+  margin-bottom: 0;
 }
 
 span {
@@ -69,6 +78,7 @@ span {
 
 .copyright {
   color: $text-color;
-  margin: 30px 0 40px 0;
+  margin: 20px 0 20px 0;
+  font-size: $font-size-small;
 }
 </style>
