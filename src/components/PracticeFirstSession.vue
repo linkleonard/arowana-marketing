@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 div {
   background: $darken-background-layer,
-    center / cover url("../assets/practice.jpg");
+    center / cover url("../assets/background/2016-ny-postseason.jpg");
   text-shadow: $darken-text-shadow;
   padding: 40px;
   display: flex;

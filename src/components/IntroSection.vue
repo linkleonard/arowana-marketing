@@ -3,8 +3,7 @@
   <h2>Who We Are</h2>
   <div>
     <p>
-      We are a group of friendly folks from different walks of life,
-      with the goal of having fun together.
+      Hard Work
     </p>
   </div>
 </section>
@@ -25,7 +24,7 @@ h2 {
 
 div {
   background: $darken-background-layer,
-    center / cover url("../assets/whoweare.jpg");
+    center / cover url("../assets/background/2018-ny-postseason.jpg");
   padding-top: 150px;
   padding-bottom: 50px;
 }

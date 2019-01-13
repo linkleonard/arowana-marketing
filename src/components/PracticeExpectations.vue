@@ -1,7 +1,7 @@
 <template>
 <section :id="id">
   <h2>What's practice like?</h2>
-  <div>
+  <div class="intro">
     <p>
       It depends on what part of the season it is. Generally, we
       have two kinds of practice sessions, depending on what part
@@ -15,7 +15,7 @@
     </p>
   </div>
   <h3>Technical Sessions</h3>
-  <div>
+  <div class="technical">
     <p>
       Technical sessions typically include drills designed to correct
       form and technique. We'll break down the various components that
@@ -29,7 +29,7 @@
     </p>
   </div>
   <h3>Race Preparation Sessions</h3>
-  <div>
+  <div class="race-prep">
     <p>
       These are the most intense of the sessions. Race prep sessions
       are held usually on Saturdays, with as much of the race crew for
@@ -70,6 +70,22 @@ div {
 p {
   @extend %image-section-text;
   padding: 0;
+}
+
+.intro {
+  background: $darken-background-layer,
+    center / cover url("../assets/background/2016-ny-seeding.jpg");
+}
+
+.technical {
+  background: $darken-background-layer,
+    center / cover url("../assets/background/2018-ny-practice-technical.jpg");
+}
+
+
+.race-prep {
+  background: $darken-background-layer,
+    center / cover url("../assets/background/2018-ny-race-media-sponsor.jpg");
 }
 
 </style>

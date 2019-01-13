@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 section {
   background: $darken-background-layer,
-    center / cover url("../assets/practice.jpg");
+    center / cover url("../assets/background/2016-ny-race-group.jpg");
   text-shadow: $darken-text-shadow;
   padding: 20px;
   display: flex;

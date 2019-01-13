@@ -66,6 +66,8 @@ nav {
   flex: 0 0 0;
   align-items: center;
   flex-flow: row wrap;
+  position: sticky;
+  top: 0;
 
   @media screen and (max-width: 767px) {
     position: absolute;

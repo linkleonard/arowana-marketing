@@ -36,8 +36,8 @@ a {
 div {
   padding-top: 50px;
   background: $darken-background-layer,
-    top / cover
-      url("https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21761727_10209559180960412_4046836709571286068_n.jpg?_nc_cat=0&oh=4c04362424115025e56813ba20e9ac76&oe=5B905D10");
+    center / cover
+      url("../assets/background/2018-ny-practice-sunset.jpg");
 }
 
 p {
