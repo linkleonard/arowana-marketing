@@ -1,10 +1,6 @@
 <template>
 <section :id="id">
-  <h2>Who We Are</h2>
   <div>
-    <p>
-      Hard Work
-    </p>
   </div>
 </section>
 </template>
@@ -18,18 +14,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-h2 {
-  margin: 20px;
-}
-
-div {
+section {
   background: $darken-background-layer,
-    center / cover url("../assets/background/2018-ny-postseason.jpg");
-  padding-top: 150px;
-  padding-bottom: 50px;
+    center / cover url("../assets/background/2017-boston-race.jpg");
+  width: 100%;
+  height: 80vh;
 }
 
-p {
-  @extend %image-section-text;
-}
 </style>
