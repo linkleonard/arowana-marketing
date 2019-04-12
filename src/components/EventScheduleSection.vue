@@ -25,25 +25,25 @@ export default {
       races: [
         {
           city: "Baltimore",
-          date: "June 23, 2018",
+          date: "June 22, 2019",
           image: baltimore,
           objectPosition: 'center',
         },
-        {
-          city: "Montreal",
-          date: "July 7, 2018",
-          image: montreal,
-          objectPosition: 'center',
-        },
+        // {
+        //   city: "Montreal",
+        //   date: "July 6, 2019",
+        //   image: montreal,
+        //   objectPosition: 'center',
+        // },
         {
           city: "New York",
-          date: "August 11, 2018",
+          date: "August 3, 2019",
           image: newyork,
           objectPosition: '50% 25%',
         },
         {
           city: "Hartford",
-          date: "August 18, 2018",
+          date: "August 17, 2019",
           image: hartford,
           objectPosition: '50% 25%',
         }
