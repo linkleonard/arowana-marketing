@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 
 export default {
   name: "TopNavbar",
