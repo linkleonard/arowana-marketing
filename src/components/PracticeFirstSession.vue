@@ -5,7 +5,7 @@
     <p>
       Please show up 15 minutes before practice starts.
       Lin will provide a short introduction to the sport, where the stroke, basic form and terminology will be introduced.
-      You will also get a chance to familiarize yourself the stroke while on the docks, before we launch.
+      You will also get a chance to familiarize yourself with the stroke while on the docks, before we launch.
     </p>
     <p>
       Make sure to bring plenty of water, and wear comfortable

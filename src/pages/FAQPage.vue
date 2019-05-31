@@ -25,7 +25,7 @@
       <p>
         Our boat has never capsized in the 14 years our crew has been
         around, so you're in good hands. You are required to wear a
-        PFD, so even the event that it happens, you will be safe.
+        PFD, so even in the event that it happens, you will be safe.
       </p>
       <p>
         In case of choppy water conditions, pay close attention to the

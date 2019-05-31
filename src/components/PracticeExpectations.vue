@@ -41,7 +41,7 @@
     <p>
       Emphasis is placed on team cohesion, where we get used to
       paddling together as a crew. We learn how to read cues from
-      nearby teammates, as well as identify any necessary seating,
+      nearby teammates, as well as identify any necessary seating and
       timing adjustments that need to be made.
     </p>
   </div>
