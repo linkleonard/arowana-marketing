@@ -29,12 +29,12 @@ export default {
           image: baltimore,
           objectPosition: 'center',
         },
-        // {
-        //   city: "Montreal",
-        //   date: "July 6, 2019",
-        //   image: montreal,
-        //   objectPosition: 'center',
-        // },
+        {
+          city: "Montreal",
+          date: "July 6, 2019",
+          image: montreal,
+          objectPosition: 'center',
+        },
         {
           city: "New York",
           date: "August 3, 2019",
