@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import VueAnalytics from "vue-analytics";
 import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -22,9 +21,6 @@ Vue.use(VueRouter);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
-Vue.use(VueAnalytics, {
-  id: 'UA-141230145-1'
-})
 Vue.config.productionTip = false;
 
 const routes = [
